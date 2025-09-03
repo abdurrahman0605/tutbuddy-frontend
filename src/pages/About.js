@@ -2,43 +2,43 @@ import React from "react";
 
 export default function About() {
   const handleDemoBooking = () => {
-    
     window.open(
-      "https://wa.me/919867081474?text=Hello%20Ma'am,%20I%20would%20like%20to%20book%20a%20free%20demo%20class.",
+      "https://wa.me/919867081474?text=Hello%20Ma'am,%20I%20would%20like%20to%20book%20a%20demo%20class%20for%20my%20child.",
       "_blank"
     );
   };
 
   return (
-    <div>
-      {/* Hero Section */}
-      <div className="bg-primary text-white text-center py-5">
-        <h1 className="display-4 fw-bold">About TutBuddy</h1>
-        <p className="lead">
-          Learn Maths & Science with <strong>Naheed Fatima</strong> – Personalized 1-to-1 tutoring for GCSE, IGCSE & A Levels.
-        </p>
-      </div>
+    <div className="container mt-5">
+      <h2 className="text-center mb-4">👩‍🏫 Meet Your Tutor – Naheed</h2>
 
-      {/* Tutor Profile Section */}
-      <div className="container mt-5">
-        <div className="row align-items-center">
-          <div className="col-md-12">
-            <h2>Meet Your Tutor – Naheed Fatima</h2>
-            <p className="mt-3">
-              👩‍🏫 With <strong>7–8 years of teaching experience</strong>, Naheed Fatima has been 
-              guiding students in <strong>Mathematics and Science</strong> to achieve their 
-              academic goals. She has worked with students across different boards, 
-              including <strong>GCSE, IGCSE, and A Levels</strong>, helping them gain confidence 
-              and secure top grades.
-            </p>
-            <p>
-              Her approach is <strong>personalized and student-centered</strong>. Every learner is unique, 
-              so Naheed adapts her teaching style to fit the child’s pace and needs. 
-              Whether it’s simplifying tough concepts, providing exam strategies, or 
-              giving extra practice, she ensures students feel confident before exams. 
-            </p>
-          </div>
-        </div>
+      {/* Tutor Bio */}
+      <div className="card shadow p-4">
+        <p className="lead">
+          With a <strong>Master’s degree in Civil Engineering from VJTI</strong>,
+          one of India’s premier engineering institutes, Naheed combines
+          academic excellence with over <strong>10 years of teaching experience</strong> 
+          in Mathematics.
+        </p>
+
+        <p>
+          She has successfully guided students in <strong>GCSE, IGCSE, IB, and A Levels</strong> 
+          across the UK, US, Middle East, and Australia, helping them gain confidence, 
+          strengthen problem-solving skills, and achieve top grades.
+        </p>
+
+        <p>
+          Naheed’s approach is <strong>personalized and student-centered</strong>. 
+          She adapts her lessons to suit each learner’s pace and style — simplifying 
+          difficult concepts, offering targeted exam strategies, and providing 
+          structured practice — so that every student feels well-prepared and confident.
+        </p>
+
+        <p>
+          Her passion lies in making Maths <strong>simple, logical, and enjoyable</strong>, 
+          ensuring students not only succeed in exams but also develop a strong, 
+          lasting foundation in the subject.
+        </p>
       </div>
 
       {/* Highlights Section */}
@@ -60,7 +60,9 @@ export default function About() {
           <div className="col-md-4">
             <div className="card p-4 shadow-sm">
               <h4>🎁 Free Demo</h4>
-              <p>Get a <strong>free demo class</strong> to experience the teaching before you enroll.</p>
+              <p>
+                Get a <strong>free demo class</strong> to experience the teaching before you enroll.
+              </p>
             </div>
           </div>
         </div>
@@ -70,14 +72,13 @@ export default function About() {
       <div className="bg-light py-5 mt-5 text-center">
         <h3>Ready to Begin Your Journey?</h3>
         <p className="lead">
-          Book a free demo class today and take the first step toward academic success!
+          Join <strong>TutBuddy</strong> today and take the first step towards exam success.
         </p>
         <button
-          className="btn btn-success btn-lg mt-3"
+          className="btn btn-primary btn-lg mt-3"
           onClick={handleDemoBooking}
         >
-          📲 Book a Free Demo 
-        
+          📩 Book Your Free Demo Class
         </button>
       </div>
     </div>

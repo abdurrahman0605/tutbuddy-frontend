@@ -1,7 +1,8 @@
 import React from "react";
-import pic1 from "../naheed.jpg";   
-import pic2 from "../pic2.jpg";    
-import pic3 from "../pic3.jpg";   
+import pic1 from "../naheed.jpg";
+import pic2 from "../pic2.jpg";
+import pic3 from "../pic3.jpg";
+import pic4 from "../pic4.jpg";   // ✅ new image
 
 export default function Home() {
   const handleDemoBooking = () => {
@@ -41,6 +42,14 @@ export default function Home() {
               <img
                 src={pic3}
                 alt="Learning environment"
+                className="d-block w-100 rounded"
+                style={{ maxHeight: "500px", objectFit: "cover" }}
+              />
+            </div>
+            <div className="carousel-item">
+              <img
+                src={pic4}
+                alt="Focused student learning"
                 className="d-block w-100 rounded"
                 style={{ maxHeight: "500px", objectFit: "cover" }}
               />
@@ -118,13 +127,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
-
-      {/* Footer Note */}
-      <div className="bg-light py-4 mt-5 text-center">
-        <p className="mb-0 fw-bold fs-3">
-          Experienced GCSE/IGCSE A Level, Maths and Science Tutor
-        </p>
       </div>
     </div>
   );

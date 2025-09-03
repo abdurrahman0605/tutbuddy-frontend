@@ -1,26 +1,25 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";   // ✅ Navbar
-import Home from "./pages/Home";            // ✅ Home page
-import About from "./pages/About";          // ✅ About page
-import Quiz from "./pages/Quiz";            // ✅ Quiz page
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Quiz from "./pages/Quiz";
 import Worksheets from "./pages/Worksheets";
 
 export default function App() {
   return (
     <Router>
-      {/* Navbar always visible */}
       <Navbar />
-
-      {/* Page content */}
-      <div className="container mt-4">
+      <main className="flex-grow-1">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/quiz" element={<Quiz />} />
-          <Route path="/worksheets" element={<Worksheets />} /> {/* ✅ New Worksheets page */}
+          <Route path="/worksheets" element={<Worksheets />} />
         </Routes>
-      </div>
+      </main>
+      <Footer /> {/* ✅ this always renders */}
     </Router>
   );
 }
