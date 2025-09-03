@@ -27,7 +27,7 @@ export default function Home() {
 
       {/* Intro Section */}
       <div className="container text-center mt-4">
-        <h2>Are you looking for Maths or cience class for your kid?</h2>
+        <h2>Are you looking for Maths or Science class for your kid?</h2>
         <p className="lead mt-3">
           Learn GCSE/IGCSE Science with <strong>Naheed Fatima</strong> – an
           experienced and dedicated tutor.
