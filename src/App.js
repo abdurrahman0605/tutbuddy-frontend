@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Quiz from "./pages/Quiz";
-import Worksheets from "./pages/Worksheets"; // ✅ Make sure Worksheets.js exists in src/pages
+import Worksheets from "./pages/Worksheets";
 
 export default function App() {
   return (
